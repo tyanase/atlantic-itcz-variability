@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "scope": "full_stage3_including_maps_composites_bootstrap_and_auxiliary_figures",
+  "settings": {
+    "analysis_lon_range": [
+      -50.0,
+      -20.0
+    ],
+    "analysis_lat_range": [
+      -15.0,
+      30.0
+    ],
+    "sst_metric_lon_range": [
+      -50.0,
+      -20.0
+    ],
+    "sst_metric_lat_range": [
+      -25.0,
+      35.0
+    ],
+    "sst_peak_lat_range": [
+      -5.0,
+      20.0
+    ],
+    "eq_south_lat_range": [
+      -15.0,
+      0.0
+    ],
+    "eq_north_lat_range": [
+      0.0,
+      15.0
+    ],
+    "centered_sst_half_width_deg": 15.0,
+    "sst_scale_sweep_deg": [
+      2.5,
+      5.0,
+      7.5,
+      10.0,
+      12.5,
+      15.0,
+      17.5,
+      20.0,
+      22.5,
+      25.0
+    ],
+    "sst_scale_bootstrap_samples": 1000,
+    "sst_scale_bootstrap_seed": 260904,
+    "skip_exhaustive_sst_figures": false,
+    "exhaustive_sst_series_types": [
+      "raw"
+    ],
+    "shape_only": false,
+    "series_types": [
+      "raw",
+      "linear_detrended"
+    ],
+    "map_vars": [
+      "sst",
+      "tcwv",
+      "tp",
+      "u10",
+      "v10",
+      "blh",
+      "lts"
+    ],
+    "top_n": 5,
+    "bottom_n": 5,
+    "overwrite": false
+  },
+  "source_sha256": {
+    "code/atlantic_itcz_state_analysis.py": "b14f410ff02d2c69cec6c2140c3d8b9baee8115528e97beb21b9331f22281918",
+    "code/atlantic_itcz_common.py": "8525f35a0747b7fd3b0f9cf4f4f757c06204202ae7b44c05a3e5361ee56ed5a0"
+  },
+  "expected_files": [
+    "composite_maps.nc",
+    "composite_years.csv",
+    "exhaustive_sst_figures/exhaustive_sst_contrast_correlation_raw.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_contrast_correlation_raw.png",
+    "exhaustive_sst_figures/exhaustive_sst_ns_decomposition_raw.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_ns_decomposition_raw.png",
+    "exhaustive_sst_figures/exhaustive_sst_scale_sensitivity_raw.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_scale_sensitivity_raw.png",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_10p0deg.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_10p0deg.png",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_12p5deg.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_12p5deg.png",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_15p0deg.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_15p0deg.png",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_17p5deg.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_17p5deg.png",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_20p0deg.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_20p0deg.png",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_22p5deg.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_22p5deg.png",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_25p0deg.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_25p0deg.png",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_2p5deg.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_2p5deg.png",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_5p0deg.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_5p0deg.png",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_7p5deg.pdf",
+    "exhaustive_sst_figures/exhaustive_sst_state_spaces_raw_7p5deg.png",
+    "pc_sst_relationships.csv",
+    "regression_maps.nc",
+    "run_metadata.json",
+    "seasonal_pc12_sst_space_metrics.csv",
+    "seasonal_pc12_sst_space_scale_sensitivity.csv",
+    "shift_sst_reference_sensitivity.csv",
+    "sst_meridional_scale_metrics.csv",
+    "sst_meridional_scale_sensitivity.csv",
+    "sst_state_metrics.csv",
+    "target_table.csv"
+  ],
+  "tolerances": {
+    "float32": {
+      "atol": 1e-07,
+      "rtol": 5e-07
+    },
+    "float64": {
+      "atol": 1e-11,
+      "rtol": 1e-10
+    },
+    "scores_and_correlations": {
+      "atol": 1e-12,
+      "rtol": 1e-10
+    },
+    "derived_from_float32": {
+      "atol": 1e-06,
+      "rtol": 1e-06
+    }
+  },
+  "resource_estimate": {
+    "bootstrap_groups": 760,
+    "replicates_per_group": 1000,
+    "bootstrap_wall_seconds_probe": 753.0859666201286,
+    "additional_work": "Weighted SST diagnostics, maps, CSV/NetCDF output, and 13 auxiliary figures.",
+    "estimated_memory_gib": "About 0.5-1.5 GiB for 60 targets and cached fields; actual use varies.",
+    "memory_probe_note": "The memory range is an estimate, not a measurement of host memory."
+  }
+}

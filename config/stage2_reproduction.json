@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "settings": {
+    "analysis_lon_range": [
+      -50.0,
+      -20.0
+    ],
+    "analysis_lat_range": [
+      -15.0,
+      30.0
+    ],
+    "center_search_lat": [
+      -5.0,
+      15.0
+    ],
+    "rel_lat_range": [
+      -20.0,
+      20.0
+    ],
+    "metric_rel_range": [
+      -10.0,
+      15.0
+    ],
+    "smooth_sigma_deg": 1.0,
+    "fractional_thresholds": [
+      0.7,
+      0.8,
+      0.9
+    ],
+    "absolute_thresholds": [
+      45.0,
+      48.0,
+      50.0
+    ],
+    "n_modes": 3,
+    "classification_margin": 0.15,
+    "min_ocean_fraction": 0.5
+  },
+  "source_sha256": {
+    "code/atlantic_itcz_tcwv_modes.py": "adfba79925329fd01b41a5307b0fee62ae2c41294f28fd6ffe0df2cf508eafa0",
+    "code/atlantic_itcz_common.py": "8525f35a0747b7fd3b0f9cf4f4f757c06204202ae7b44c05a3e5361ee56ed5a0"
+  },
+  "expected_outputs": [
+    "tcwv_modes_monthly.nc",
+    "tcwv_modes_seasonal.nc",
+    "tcwv_metrics_monthly.csv",
+    "tcwv_metrics_seasonal.csv",
+    "tcwv_mode_summary.csv",
+    "selected_shape_modes.csv",
+    "run_metadata.json"
+  ],
+  "tolerances": {
+    "float32": {
+      "atol": 1e-07,
+      "rtol": 5e-07
+    },
+    "float64": {
+      "atol": 1e-11,
+      "rtol": 1e-10
+    },
+    "scores_and_correlations": {
+      "atol": 1e-12,
+      "rtol": 1e-10
+    },
+    "derived_from_float32": {
+      "atol": 1e-06,
+      "rtol": 1e-06
+    }
+  },
+  "expected_years": [
+    1979,
+    2024
+  ],
+  "djf_complete_years": [
+    1980,
+    2024
+  ],
+  "series_types": [
+    "raw",
+    "linear_detrended"
+  ],
+  "note": "Stage 2 parses min_ocean_fraction but uses the supplied static ocean_mask. The command does not enable overwriting."
+}

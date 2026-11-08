@@ -1,0 +1,10 @@
+# Recorded Stage 1 environment: Python 3.13.11. Use separately from requirements.txt.
+# Requires the native ecCodes library; these versions are not a platform-independent lock.
+numpy==2.3.5
+scipy==1.17.0
+xarray==2026.4.0
+pandas==3.0.0
+cfgrib==0.9.15.1
+eccodes==2.47.0
+netCDF4==1.7.4
+dask==2026.3.0

@@ -1,0 +1,14 @@
+# Track the release files below; leave generated root directories untracked.
+/*
+!/.gitignore
+!/README.md
+!/GITHUB_FILES.txt
+!/code/
+!/config/
+!/data/
+
+# Ignore caches and editor files within source directories.
+__pycache__/
+*.py[cod]
+.DS_Store
+.ipynb_checkpoints/

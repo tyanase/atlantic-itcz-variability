@@ -1,0 +1,11 @@
+target,group,rank,year
+seasonal_SON_raw_selected_shape_eof1,low,1,1992
+seasonal_SON_raw_selected_shape_eof1,low,2,1982
+seasonal_SON_raw_selected_shape_eof1,low,3,1983
+seasonal_SON_raw_selected_shape_eof1,low,4,1994
+seasonal_SON_raw_selected_shape_eof1,low,5,1991
+seasonal_SON_raw_selected_shape_eof1,high,1,2016
+seasonal_SON_raw_selected_shape_eof1,high,2,2023
+seasonal_SON_raw_selected_shape_eof1,high,3,2024
+seasonal_SON_raw_selected_shape_eof1,high,4,2010
+seasonal_SON_raw_selected_shape_eof1,high,5,2019

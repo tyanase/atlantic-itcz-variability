@@ -1,0 +1,160 @@
+{
+  "groups": {
+    "fig1": {
+      "script": "plot_atlantic_itcz_fig1_v1.py",
+      "arguments": [
+        "--modes-dir",
+        "${DATA}/modes",
+        "--outdir",
+        "${OUT}",
+        "--series-type",
+        "raw",
+        "--dpi",
+        "300"
+      ],
+      "outputs": {
+        "fig1_tcwv_seasonal_modes_raw_v1_7.png": "Fig1.png",
+        "fig1_tcwv_seasonal_modes_raw_v1_7.pdf": "Fig1.pdf"
+      }
+    },
+    "s1_s2": {
+      "script": "plot_atlantic_itcz_fig1_support_v1.py",
+      "arguments": [
+        "--modes-dir",
+        "${DATA}/modes",
+        "--outdir",
+        "${OUT}",
+        "--series-type",
+        "raw",
+        "--dpi",
+        "300"
+      ],
+      "outputs": {
+        "figS2_tcwv_seasonal_mode_diagnostics_v1_1.png": "FigS1.png",
+        "figS2_tcwv_seasonal_mode_diagnostics_v1_1.pdf": "FigS1.pdf",
+        "figS1_tcwv_monthly_modes_raw_v1_1.png": "FigS2.png",
+        "figS1_tcwv_monthly_modes_raw_v1_1.pdf": "FigS2.pdf"
+      }
+    },
+    "fig2_s3": {
+      "script": "plot_atlantic_itcz_fig2_v1.py",
+      "arguments": [
+        "--state-dir",
+        "${DATA}/sst",
+        "--outdir",
+        "${OUT}",
+        "--series-type",
+        "raw",
+        "--mam-scale-deg",
+        "5",
+        "--son-scale-deg",
+        "12.5",
+        "--dpi",
+        "240"
+      ],
+      "outputs": {
+        "fig2_sst_shift_shape_v1.png": "Fig2.png",
+        "fig2_sst_shift_shape_v1.pdf": "Fig2.pdf",
+        "figS_sst_all_seasons_pc12_v1.png": "FigS3.png",
+        "figS_sst_all_seasons_pc12_v1.pdf": "FigS3.pdf"
+      },
+      "settings": {
+        "series_type": "raw",
+        "mam_scale_deg": 5.0,
+        "son_scale_deg": 12.5,
+        "dpi": 240
+      }
+    },
+    "fig3": {
+      "script": "plot_atlantic_itcz_fig3_ai_grad_v1.py",
+      "arguments": [
+        "--prepare-dir",
+        "${DATA}/maps",
+        "--stage4-dir",
+        "${DATA}/organization",
+        "--metrics-file",
+        "daily_organization_metrics.nc",
+        "--static-file",
+        "static_fields.nc",
+        "--window",
+        "rel_5deg",
+        "--months",
+        "9",
+        "10",
+        "11",
+        "--precip-levels",
+        "5",
+        "20",
+        "--tcwv-min",
+        "20",
+        "--tcwv-max",
+        "65",
+        "--tcwv-step",
+        "5",
+        "--outdir",
+        "${OUT}",
+        "--dpi",
+        "300"
+      ],
+      "outputs": {
+        "fig3_daily_ai_grad_v1.png": "Fig3.png",
+        "fig3_daily_ai_grad_v1.pdf": "Fig3.pdf",
+        "fig3_daily_ai_grad_v1_selected_days.csv": "Fig3_selected_days.csv"
+      }
+    },
+    "fig4_s4_s7": {
+      "script": "plot_atlantic_itcz_fig4_support_reorganized_v3_1.py",
+      "arguments": [
+        "--stage4-dir",
+        "${DATA}/organization",
+        "--analysis-dir",
+        "${DATA}/relationships",
+        "--outdir",
+        "${OUT}",
+        "--target",
+        "seasonal_SON_raw_selected_shape_eof1",
+        "--window",
+        "rel_5deg",
+        "--sst-half-width",
+        "12.5",
+        "--high-years",
+        "5",
+        "--low-years",
+        "5",
+        "--hist-bins",
+        "18",
+        "--dpi",
+        "300"
+      ],
+      "outputs": {
+        "fig4_ai_grad_shape_pc_sst_level_v3.png": "Fig4.png",
+        "fig4_ai_grad_shape_pc_sst_level_v3.pdf": "Fig4.pdf",
+        "figS4_organization_event_frequency_v3.png": "FigS4.png",
+        "figS4_organization_event_frequency_v3.pdf": "FigS4.pdf",
+        "figS5_organization_metric_robustness_v3.png": "FigS5.png",
+        "figS5_organization_metric_robustness_v3.pdf": "FigS5.pdf",
+        "figS5_organization_metric_robustness_v3_data.csv": "FigS5_data.csv",
+        "figS6_organization_window_sensitivity_v3.png": "FigS6.png",
+        "figS6_organization_window_sensitivity_v3.pdf": "FigS6.pdf",
+        "figS6_organization_window_sensitivity_v3_data.csv": "FigS6_data.csv",
+        "figS7_sst_width_sensitivity_v3_1.png": "FigS7.png",
+        "figS7_sst_width_sensitivity_v3_1.pdf": "FigS7.pdf",
+        "figS7_sst_width_sensitivity_v3_1_data.csv": "FigS7_data.csv"
+      }
+    },
+    "table_s1": {
+      "script": "export_table_s1.py",
+      "arguments": [
+        "--input",
+        "${DATA}/modes/tcwv_mode_summary.csv",
+        "--outdir",
+        "${OUT}"
+      ],
+      "outputs": {
+        "table_s1.csv": "TableS1.csv",
+        "table_s1.md": "TableS1.md",
+        "threshold_sensitivity.csv": "TableS1_threshold_sensitivity.csv"
+      }
+    }
+  }
+}

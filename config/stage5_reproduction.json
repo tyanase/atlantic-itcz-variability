@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "scope": "all_preserved_stage5_products_SON_1979_2024",
+  "settings": {
+    "sst_half_width": 12.5,
+    "organization_window": "rel_5deg",
+    "season": "SON",
+    "mode": 1,
+    "series_type": "raw",
+    "dpi": 250
+  },
+  "source_sha256": {
+    "code/atlantic_itcz_sst_organization.py": "5c285a339f54849276f6b06e26edbf5a0ed038cf3f86893b5465d1dda09d4841"
+  },
+  "expected_files": [
+    "correlations_by_sst_scale.csv",
+    "sst_organization_reference_scatter.pdf",
+    "sst_organization_reference_scatter.png",
+    "sst_organization_sst_scale_sensitivity.pdf",
+    "sst_organization_sst_scale_sensitivity.png",
+    "three_way_correlations_reference.csv",
+    "yearly_joined_all_sst_scales.csv",
+    "yearly_joined_reference.csv"
+  ],
+  "tolerances": {
+    "float64": {
+      "atol": 1e-11,
+      "rtol": 1e-10
+    }
+  },
+  "scientific_specification": {
+    "years": [
+      1979,
+      2024
+    ],
+    "n_years": 46,
+    "pc_ddof": 1,
+    "sst_reference_latitude_deg": 7.0,
+    "sst_half_widths_deg": [
+      2.5,
+      5.0,
+      7.5,
+      10.0,
+      12.5,
+      15.0,
+      17.5,
+      20.0,
+      22.5,
+      25.0
+    ],
+    "organization_half_widths_deg": [
+      5.0,
+      7.5,
+      10.0,
+      12.5,
+      15.0,
+      17.5
+    ],
+    "width_selection": "Selected from SON raw EOF1 SST-level R2 in Stage 3, not from SST-organization correlations.",
+    "detrending": "Remove linear trends separately from the raw PC, SST, and organization series; do not recalculate EOFs."
+  },
+  "provenance_limits": [
+    "Historical Stage 5 execution metadata, the exact command, and the executed-source hash were not archived.",
+    "Matching outputs alone do not establish the historical source or command.",
+    "PNG metadata support DPI 250 but do not identify the original command.",
+    "Stage 5 writes four CSV files and two PDF/PNG pairs; it does not write NetCDF, metadata JSON, or PC-group tables.",
+    "S5/S6 use Stage 4 annual tables directly; supplementary check tables are not Stage 5 outputs."
+  ],
+  "required_free_bytes": 67108864
+}

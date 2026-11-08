@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "scope": "all_15_preserved_stage4_products_1979_2024",
+  "source_sha256": {
+    "code/atlantic_itcz_daily_organization.py": "acc5fd437f6a3df461dc9bc873ca23393df754d4121c612cd7f6ed68a5a9c178",
+    "code/atlantic_itcz_common.py": "8525f35a0747b7fd3b0f9cf4f4f757c06204202ae7b44c05a3e5361ee56ed5a0"
+  },
+  "settings": {
+    "analysis_lon_range": [
+      -50.0,
+      -20.0
+    ],
+    "analysis_lat_range": [
+      -15.0,
+      30.0
+    ],
+    "center_search_lat": [
+      -5.0,
+      15.0
+    ],
+    "center_smooth_sigma_deg": 1.0,
+    "relative_half_width_km": [
+      1536.0
+    ],
+    "relative_half_width_deg": [
+      5.0,
+      7.5,
+      10.0,
+      12.5,
+      15.0,
+      17.5
+    ],
+    "sweep_half_width_deg": [
+      5.0,
+      18.0,
+      0.5
+    ],
+    "no_width_sweep": true,
+    "period_types": [
+      "monthly",
+      "seasonal"
+    ],
+    "series_types": [
+      "raw",
+      "linear_detrended"
+    ],
+    "top_n": 5,
+    "bottom_n": 5,
+    "event_percentile": 90.0,
+    "event_windows": [
+      "rel_5deg",
+      "rel_7p5deg",
+      "rel_10deg",
+      "rel_12p5deg",
+      "rel_15deg",
+      "rel_17p5deg"
+    ],
+    "representative_window": "rel_15deg",
+    "representative_n": 3,
+    "representative_min_separation_days": 5,
+    "no_representative_maps": true,
+    "overwrite": false
+  },
+  "organization_windows": [
+    {
+      "half_width_deg": null,
+      "half_width_km": null,
+      "kind": "fixed",
+      "lat_max": 30.0,
+      "lat_min": -15.0,
+      "role": "fixed_reference",
+      "window": "fixed_analysis"
+    },
+    {
+      "half_width_deg": 13.813579866911702,
+      "half_width_km": 1536.0,
+      "kind": "relative",
+      "lat_max": null,
+      "lat_min": null,
+      "role": "primary_reference",
+      "window": "rel_1536km"
+    },
+    {
+      "half_width_deg": 5.0,
+      "half_width_km": 555.9746332227937,
+      "kind": "relative",
+      "lat_max": null,
+      "lat_min": null,
+      "role": "named_sensitivity",
+      "window": "rel_5deg"
+    },
+    {
+      "half_width_deg": 7.5,
+      "half_width_km": 833.9619498341905,
+      "kind": "relative",
+      "lat_max": null,
+      "lat_min": null,
+      "role": "named_sensitivity",
+      "window": "rel_7p5deg"
+    },
+    {
+      "half_width_deg": 10.0,
+      "half_width_km": 1111.9492664455875,
+      "kind": "relative",
+      "lat_max": null,
+      "lat_min": null,
+      "role": "named_sensitivity",
+      "window": "rel_10deg"
+    },
+    {
+      "half_width_deg": 12.5,
+      "half_width_km": 1389.9365830569843,
+      "kind": "relative",
+      "lat_max": null,
+      "lat_min": null,
+      "role": "named_sensitivity",
+      "window": "rel_12p5deg"
+    },
+    {
+      "half_width_deg": 15.0,
+      "half_width_km": 1667.923899668381,
+      "kind": "relative",
+      "lat_max": null,
+      "lat_min": null,
+      "role": "named_sensitivity",
+      "window": "rel_15deg"
+    },
+    {
+      "half_width_deg": 17.5,
+      "half_width_km": 1945.9112162797776,
+      "kind": "relative",
+      "lat_max": null,
+      "lat_min": null,
+      "role": "named_sensitivity",
+      "window": "rel_17p5deg"
+    }
+  ],
+  "expected_files": [
+    "daily_organization_metrics.nc",
+    "organization_event_frequency.csv",
+    "organization_event_thresholds.csv",
+    "organization_statistics.csv",
+    "organization_targets.csv",
+    "organization_window_sensitivity.csv",
+    "pc_event_frequency_group_comparison.csv",
+    "pc_event_frequency_relationships.csv",
+    "pc_organization_daily_samples.csv",
+    "pc_organization_group_comparison.csv",
+    "pc_organization_group_summary.csv",
+    "pc_organization_group_years.csv",
+    "pc_organization_relationships.csv",
+    "representative_event_days.csv",
+    "run_metadata.json"
+  ],
+  "tolerances": {
+    "float32": {
+      "atol": 1e-07,
+      "rtol": 5e-07
+    },
+    "float64": {
+      "atol": 1e-11,
+      "rtol": 1e-10
+    }
+  },
+  "provenance_limits": [
+    "The original command was not saved; this recipe was reconstructed from recorded settings.",
+    "no_representative_maps=True reproduces the archived 15-file output set. The record does not distinguish disabled maps from maps removed after execution; this flag affects only optional map extraction.",
+    "The dense sweep is disabled because the saved sweep_half_width_deg value is null. The unused sweep triple retains the default values.",
+    "The common module's historical execution hash was not recorded."
+  ],
+  "resource_estimate": {
+    "daily_input_bytes": 1511468165,
+    "historical_output_bytes": 23391087,
+    "estimated_daily_seconds": 10.4,
+    "estimated_peak_memory_gib": "About 0.3-1.0 GiB, including pandas summaries; actual use varies.",
+    "required_free_bytes": 268435456,
+    "no_data_copy": true
+  }
+}

@@ -1,0 +1,7 @@
+# Figure-generation environment tested with Python 3.10.16.
+numpy==2.0.0
+scipy==1.14.0
+pandas==2.2.2
+xarray==2025.6.1
+matplotlib==3.9.0
+netCDF4==1.7.2
