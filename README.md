@@ -178,9 +178,40 @@ memory in previous annual runs), rather than a login-node test.
 The correlations describe associations, not causal effects. Event-day
 fractions count days, not statistically independent episodes.
 
+## Authorship and licenses
+
+Tomoro Yanase is the author of the software and processed-data contributions.
+The associated manuscript, *Atlantic ITCZ Broadening, Zonal Aggregation, and
+Warm SSTs*, is by Tomoro Yanase and Cathy Hohenegger. `CITATION.cff` describes
+the software package, not the manuscript's author list.
+
+- Code, analysis configuration, and associated documentation: **MIT**,
+  copyright 2026 Tomoro Yanase; see [`LICENSE`](LICENSE).
+- Processed NetCDF/CSV data and their manifest in `data/`: **CC BY 4.0**,
+  for Tomoro Yanase's contributions; see [`data/LICENSE`](data/LICENSE).
+  Credit Tomoro Yanase, link to this repository and the license, and indicate
+  changes when reusing these contributions.
+
+ERA5 is produced by ECMWF for the Copernicus Climate Change Service (C3S).
+The processed data use DKRZ's E5 P1D archive; the original GRIB archive is not
+redistributed here. Original ERA5 rights and applicable Copernicus conditions
+remain in force. The data license does not replace the
+[Copernicus terms and attribution requirements](https://apps.ecmwf.int/datasets/licences/copernicus/).
+See also [DKRZ's distribution guidance](https://www.dkrz.de/en/communication/news-archive/datacollections).
+The transformations and selections are described above and in `data/manifest.csv`.
+Retain this source notice when redistributing the derived data:
+
+> Contains modified Copernicus Climate Change Service information 2026.
+> The European Commission and ECMWF are not responsible for use of these data.
+
+The CFF `license: MIT` field describes the software. For a future combined
+Zenodo archive, verify that Tomoro Yanase is the sole creator, list **MIT and
+CC BY 4.0**, and retain their file-specific scopes in the record description.
+These are separate licenses for code and data, not alternatives for every file.
+
 ## Repository files
 
-`GITHUB_FILES.txt` lists the 46 files intended for `atlantic-itcz-variability`.
+`GITHUB_FILES.txt` lists the 48 files intended for `atlantic-itcz-variability`.
 `.gitignore` excludes generated figures, full analysis outputs, environments,
 logs, and caches. Update the root allowlist when adding a release file.
 Citation metadata are in [`CITATION.cff`](CITATION.cff).

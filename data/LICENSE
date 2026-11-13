@@ -1,0 +1,37 @@
+Processed data: Creative Commons Attribution 4.0 International
+SPDX-License-Identifier: CC-BY-4.0
+
+Processed-data author: Tomoro Yanase
+Copyright (c) 2026 Tomoro Yanase, for the processing and other original contributions.
+
+The processed NetCDF and CSV files in this directory, including manifest.csv,
+are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0),
+to the extent of the rights held by Tomoro Yanase. The full license terms are:
+https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+You may share and adapt these contributions, including commercially, under
+those terms. Credit Tomoro Yanase, link to the repository and CC BY 4.0, and
+indicate any changes. Repository:
+https://github.com/tyanase/atlantic-itcz-variability
+
+ERA5 provenance and upstream rights
+---------------------------------
+These data are derived from ERA5, produced by ECMWF for the Copernicus Climate
+Change Service (C3S), using the DKRZ E5 P1D archive. The processing includes
+spatial binning, temporal summaries, scientific diagnostics, and selections
+described in ../README.md and manifest.csv. The original ERA5 GRIB archive is
+not included. No ownership of the original ERA5 products is claimed here.
+Underlying ERA5 rights and applicable Copernicus terms are retained; this
+CC BY 4.0 notice does not replace those terms or the required source credit.
+
+Contains modified Copernicus Climate Change Service information 2026.
+The European Commission and ECMWF are not responsible for use of these data.
+
+Copernicus terms and attribution:
+https://apps.ecmwf.int/datasets/licences/copernicus/
+DKRZ ERA5 distribution and attribution guidance:
+https://www.dkrz.de/en/communication/news-archive/datacollections
+
+Retain the Copernicus attribution and disclaimer when redistributing these
+derived data. The repository's MIT license applies to code and associated
+documentation, not to these processed-data files.

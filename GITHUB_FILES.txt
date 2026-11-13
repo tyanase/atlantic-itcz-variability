@@ -1,6 +1,7 @@
 .gitignore
 CITATION.cff
 GITHUB_FILES.txt
+LICENSE
 README.md
 code/atlantic_itcz_common.py
 code/atlantic_itcz_daily_organization.py
@@ -23,6 +24,7 @@ config/stage3_reproduction.json
 config/stage4_reproduction.json
 config/stage5_reproduction.json
 config/stage_commands.json
+data/LICENSE
 data/manifest.csv
 data/maps/daily/era5_daily_1982.nc
 data/maps/daily/era5_daily_1984.nc

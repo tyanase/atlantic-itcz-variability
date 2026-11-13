@@ -1,18 +1,18 @@
 # Prepared for the planned 1.0.0 release; no release has been published.
-# Author names and order are provisional and require author approval.
 cff-version: 1.2.0
 message: "If you use this software or its processed data, please cite this package."
 type: software
+license: MIT
 title: "Atlantic ITCZ Variability: Analysis Code and Processed Data"
 version: "1.0.0"
 authors:
   - family-names: Yanase
     given-names: Tomoro
-  - family-names: Hohenegger
-    given-names: Cathy
 repository-code: "https://github.com/tyanase/atlantic-itcz-variability"
 abstract: >-
   Python scripts and processed data for reproducing the figures and supporting
   analyses of a study on Atlantic ITCZ variability, rainbelt broadening, SST,
   and zonal moisture organization. Associated manuscript: Atlantic ITCZ
   Broadening, Zonal Aggregation, and Warm SSTs.
+  Code is licensed under MIT; processed data in data/ are licensed under
+  CC BY 4.0, with the original Copernicus attribution and terms retained.
