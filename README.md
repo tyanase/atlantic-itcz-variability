@@ -180,9 +180,10 @@ fractions count days, not statistically independent episodes.
 
 ## Repository files
 
-`GITHUB_FILES.txt` lists the 45 files intended for `atlantic-itcz-variability`.
+`GITHUB_FILES.txt` lists the 46 files intended for `atlantic-itcz-variability`.
 `.gitignore` excludes generated figures, full analysis outputs, environments,
 logs, and caches. Update the root allowlist when adding a release file.
+Citation metadata are in [`CITATION.cff`](CITATION.cff).
 
 AI assistance: AI tools helped prepare the figure-generation wrapper and
 package documentation.

@@ -1,4 +1,5 @@
 .gitignore
+CITATION.cff
 GITHUB_FILES.txt
 README.md
 code/atlantic_itcz_common.py

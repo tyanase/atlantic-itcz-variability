@@ -3,6 +3,7 @@
 !/.gitignore
 !/README.md
 !/GITHUB_FILES.txt
+!/CITATION.cff
 !/code/
 !/config/
 !/data/
